@@ -1,0 +1,27 @@
+GET http://127.0.0.1:5000/users
+
+###
+GET http://127.0.0.1:5000/users/6243d79fd608f763a0e2021b
+
+###
+POST http://127.0.0.1:5000/users
+Content-Type: application/json
+
+{
+    "name":"Arisonia",
+    "email":"arisonia@mdsstartup.com",
+    "gender":"Female"
+}
+
+###
+PATCH http://127.0.0.1:5000/users/6243d79fd608f763a0e2021b
+Content-Type: application/json
+
+{
+    "name":"Deemas Rahmandani",
+    "email":"mdsme@mdsstartup.com",
+    "gender":"Male"
+}
+
+###
+DELETE  http://127.0.0.1:5000/users/6243d79fd608f763a0e2021b
